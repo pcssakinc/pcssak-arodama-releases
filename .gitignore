@@ -1,0 +1,10 @@
+# 공개 설치·업데이트 자산은 Git 커밋이 아니라 버전 고정 GitHub Release에만 첨부합니다.
+*.exe
+*.msi
+*.msix
+*.sig
+*.zip
+*.cdx.json
+BUILD-PROVENANCE.json
+latest.json
+SHA256SUMS.txt

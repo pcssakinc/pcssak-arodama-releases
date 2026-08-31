@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "비공개 보안 신고 / Private security report"
+    url: "https://github.com/pcssakinc/pcssak-arodama-releases/security/advisories/new"
+    about: "취약점이나 악용 가능한 보안 문제는 공개 Issue 대신 이 경로를 사용하세요."
+  - name: "PCSSAK 지원 / Support"
+    url: "https://pcssak.com/support"
+    about: "일반 설치·사용·개인정보·계정과 무관한 지원 안내를 확인하세요."

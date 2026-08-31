@@ -1,0 +1,101 @@
+name: "기능 제안 / Feature request"
+description: "안전성·편의성·정확성을 높일 사용자 문제와 기대 결과를 제안합니다."
+title: "[Feature] "
+labels:
+  - "enhancement"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        구현 방법보다 사용자가 겪는 문제와 기대 결과를 먼저 알려 주세요.
+        실제 클립보드 내용, 고객 자료, DB, 백업, 개인 경로나 기밀을 첨부하지 마세요.
+        취약점이나 우회 방법은
+        [비공개 보안 신고](https://github.com/pcssakinc/pcssak-arodama-releases/security/advisories/new)를 사용하세요.
+  - type: textarea
+    id: problem
+    attributes:
+      label: "해결할 사용자 문제 / User problem"
+      description: "현재 어떤 일이 불편하거나 불가능한지 합성 예시로 설명하세요."
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: "발생 빈도 / Frequency"
+      options:
+        - "하루 여러 번"
+        - "하루 한 번 정도"
+        - "주 몇 회"
+        - "가끔"
+        - "특정 업무에서만"
+    validations:
+      required: true
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: "관련 사용 흐름 / Workflow"
+      options:
+        - "수집"
+        - "기록·검색·필터"
+        - "붙여넣기·서식"
+        - "자주 쓰는 문구"
+        - "태그·보드·순차 붙여넣기·OCR"
+        - "기억 타임라인"
+        - "삭제·복구"
+        - "백업·복원"
+        - "업데이트"
+        - "UI·접근성·번역"
+        - "기타"
+    validations:
+      required: true
+  - type: dropdown
+    id: data_type
+    attributes:
+      label: "주 데이터 종류 / Primary data type"
+      options:
+        - "텍스트"
+        - "서식 있는 글"
+        - "이미지"
+        - "실제 또는 가상 파일"
+        - "혼합"
+        - "해당 없음"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "기대 결과 / Desired outcome"
+      description: "처음 사용하는 사람도 이해할 수 있는 최종 동작을 적으세요."
+    validations:
+      required: true
+  - type: textarea
+    id: safety_privacy
+    attributes:
+      label: "안전·개인정보 영향 / Safety and privacy"
+      description: "잘못 동작할 때 생길 수 있는 손실, 오붙여넣기, 노출, 성능 또는 호환성 위험을 적으세요."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "현재 대안 / Current workaround"
+      description: "지금 어떤 방법을 쓰며 무엇이 부족한지 적으세요."
+  - type: input
+    id: platform
+    attributes:
+      label: "사용 환경 / Environment"
+      description: "지원 대상 확인에 필요한 Windows 버전과 x64/x86만 적으세요."
+      placeholder: "예: Windows 11 Pro x64"
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: "확인 / Confirmations"
+      options:
+        - label: "기존 Issue를 검색했고 동일한 제안을 찾지 못했습니다."
+          required: true
+        - label: "실제 사용자 데이터, 자격증명, DB, 백업, 개인 경로나 기밀을 첨부하지 않았습니다."
+          required: true
+        - label: "이 제안이 현재 공개 버전의 기능이나 일정 약속을 뜻하지 않음을 이해합니다."
+          required: true
