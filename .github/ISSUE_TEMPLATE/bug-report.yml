@@ -18,7 +18,7 @@ body:
     attributes:
       label: "AroDamA 버전 / Version"
       description: "앱의 정보 화면에 표시된 버전입니다."
-      placeholder: "예: 0.4.0"
+      placeholder: "예: 0.4.1 / e.g. 0.4.1"
     validations:
       required: true
   - type: dropdown

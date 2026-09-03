@@ -37,6 +37,26 @@ By submitting text you created, you confirm that you have the right to provide i
 to reproduce, edit, and distribute it as project documentation. Third-party materials remain under
 their own rights and licenses. A contribution does not grant access to proprietary source code.
 
+## Feedback handling and fair participation
+
+Use [Discussions](https://github.com/pcssakinc/pcssak-arodama-releases/discussions) for questions,
+experiences, and ideas, and structured Issues for reproducible defects. A useful small report is
+more helpful than many speculative or AI-generated reports. Verify any AI-assisted submission
+personally and state the environment and what you actually observed.
+
+PCSSAK distinguishes received, needs information, under review, planned, released, and
+on hold/not adopted. A status can be a short maintainer reply; these are not promised labels or
+response deadlines. Where practicable, explain the decision and connect an accepted change to the
+relevant release. Critical feedback is welcome; moderation concerns spam, abuse, privacy exposure,
+and unsafe or unrelated content, not simply a negative opinion.
+
+The text-contribution permission above remains unchanged and can cover documentation used with
+commercial versions. Feedback does not by itself promise product ownership, payment, revenue
+sharing, employment, source access, or implementation. Paid work, rewards, or revenue sharing need
+separate explicit written terms before work begins. External code requires separate prior agreement
+on scope, provenance, rights, tests, and any compensation; do not paste it into a public report.
+Only credit contributors with their consent and chosen display name; do not publish private identity.
+
 ## 한국어
 
 - 새 Issue를 만들기 전에 기존 내용을 검색하고 Issue 하나에는 문제 하나만 적습니다.
@@ -58,3 +78,22 @@ their own rights and licenses. A contribution does not grant access to proprieta
 직접 작성한 텍스트를 제출하면 해당 내용을 제공할 권한이 있고 PCSSAK이 프로젝트 문서로 복제·
 편집·배포할 수 있도록 허용한다는 뜻입니다. 제3자 자료는 각 권리와 라이선스를 따르며, 기여로
 비공개 소스 접근 권한이 생기지 않습니다.
+
+### 의견 처리와 공정한 참여
+
+질문·사용 후기·아이디어는 [공개 토론](https://github.com/pcssakinc/pcssak-arodama-releases/discussions),
+재현 가능한 오류는 구조화된 이슈를 사용합니다. 추측이나 AI 생성 제보를 대량으로 보내기보다
+직접 확인한 소량의 구체적 제보를 부탁드립니다. AI 보조 자료도 사람이 환경과 관찰 결과를
+확인해 작성하십시오.
+
+접수·추가 정보 필요·검토 중·계획됨·반영됨·보류 또는 채택하지 않음을 구분합니다. 상태는 운영자의
+짧은 답변으로도 표시할 수 있으며 특정 라벨 개설이나 응답 시한 약속이 아닙니다. 가능한 범위에서
+결정 이유를 설명하고 반영한 변경을 릴리스에 연결합니다. 비판적인 의견도 환영하며, 단순히
+부정적이라는 이유가 아니라 도배·괴롭힘·개인정보 노출·위험하거나 무관한 내용을 기준으로
+관리합니다.
+
+위 문서 기여 이용 허락은 그대로이며 유료 버전과 함께 제공되는 문서에도 사용될 수 있습니다.
+의견 제출 자체가 제품 소유권·보수·수익 배분·고용·소스 접근·구현을 약속하지는 않습니다.
+유료 협력·포상·수익 배분은 착수 전에 명시적인 별도 서면 조건으로 합의합니다. 외부 코드는
+범위·출처·권리·시험·보상 여부를 먼저 별도 합의하며 공개 제보에 붙여 넣지 마십시오.
+공개 감사 표시는 당사자의 동의를 받아 원하는 표시명만 사용하고 비공개 신원을 공개하지 않습니다.

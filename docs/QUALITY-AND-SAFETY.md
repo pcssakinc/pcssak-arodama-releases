@@ -4,7 +4,25 @@
 
 PCssak AroDamA is designed around a simple rule: copying one line or twenty thousand characters
 should remain convenient now and retrievable later without hiding uncertainty from the user.
-Free Early Access `0.4.0` is a testable release candidate, not a claim of perfect compatibility.
+Free Early Access is not a claim of perfect compatibility.
+
+## Current release and evidence boundaries — 2026-09-03
+
+The current release is [v0.4.1](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.1),
+published 2026-09-02. This documentation review does not rerun app, installer, or signature tests.
+
+| Evidence | Scope and status |
+| --- | --- |
+| Latest release metadata | Reviewed: v0.4.1 is published, non-draft, non-prerelease, with 17 attached assets. |
+| Approved EULA, privacy, and release notes | Reviewed: anonymous downloads match the approved canonical files by SHA-256. This is document identity, not a legal certification. |
+| 0.4.1 changes | The published release notes describe installer-language handoff, language preservation, explicit data deletion on uninstall, and safe settings recovery. Those are release claims, not new runtime results from this review. |
+| Historical automated results | The 0.4.0 results below remain 0.4.0 evidence; they are not relabeled as new 0.4.1 passes. |
+| Real-device, accessibility, translation, legal, and external security review | Not established by this documentation review. The acceptance work below remains pending unless exact-release evidence is separately recorded. |
+
+For each future result, record the exact version and file hash, date, Windows build/architecture,
+scenario, expected and observed result, and whether it was automated, real-device, or not run. Use
+synthetic data; omit private paths and raw user logs. Link a confirmed defect to its fix and release,
+and correct an inaccurate claim visibly rather than rewriting the historical result.
 
 ## Safety principles
 
@@ -48,7 +66,11 @@ toolchain, signing, packaging, metadata, or asset change requires the affected c
 to be regenerated. A Defender result does not guarantee SmartScreen reputation, another antivirus
 engine, or future definitions.
 
-## Public release gate
+## Historical 0.4.0 release gate
+
+The following preserves the gate used for 0.4.0. For the current version and filenames, use
+[Release asset policy](RELEASE-ASSET-POLICY.md); a newer latest release does not invalidate the old
+version-pinned publication.
 
 Publication is acceptable only when all of these agree:
 
