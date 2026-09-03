@@ -8,10 +8,10 @@
 
 PCssak AroDamA is a local-first Windows clipboard tool for finding and safely reusing text,
 formatted text, images, physical or constrained virtual files, and frequently used phrases.
-The current release is **0.4.1 Free Early Access**, published on 2026-09-02 (UTC).
-Version 0.4.0 was the first free release; 0.4.1 retains its core features and improves installer
-language handoff and update reliability. It contains no account, advertising,
-analytics, payment, remote-license activation, or user-visible Pro functionality.
+The documented release is **0.4.2 Free Early Access**. This usability patch distinguishes copying
+from automatic pasting, explains tags and collections, and keeps the window open after first-run
+consent. It preserves the installer-language improvements introduced in 0.4.1. It contains no
+account, advertising, analytics, payment, remote-license activation, or user-visible Pro functionality.
 
 Free Early Access describes the maturity and current price of this version. It is not a promise
 that every future version or feature will remain free.
@@ -34,20 +34,21 @@ Use the version-pinned official release or PCSSAK download page below. Current-d
 2026-09-03. Historical releases keep their own documents and evidence; a later latest release does
 not make an older official release unofficial.
 
-- GitHub release: `https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.1`
+- GitHub release: `https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.2`
 - Product page: `https://pcssak.com/arodama`
 - Static updater endpoint:
   `https://github.com/pcssakinc/pcssak-arodama-releases/releases/latest/download/latest.json`
 
-At this review, `v0.4.1` is the published, non-draft, non-prerelease GitHub Latest release with the
-17 named assets below. Compare exact filenames and hashes with that release. The document review
-is not a new installer execution or signature-verification result. Repository files, pull-request artifacts, branch previews, source tags, work logs, and
+Use this documentation with the published, non-draft, non-prerelease `v0.4.2` release and its
+17 named assets below. Compare exact filenames and hashes with the version-pinned release and
+check GitHub Latest separately. A document update is not proof of publication, installer execution,
+or signature verification. Repository files, pull-request artifacts, branch previews, source tags, work logs, and
 unpublished draft assets are not public installers.
 
 The two installer names are fixed:
 
-- `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe`
-- `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x86-Setup.exe`
+- `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x64-Setup.exe`
+- `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x86-Setup.exe`
 
 Choose x64 for 64-bit Windows. The x86 installer is only for the limited Windows 10 22H2 x86
 compatibility candidate. Windows 11 x86 does not exist, and native ARM64 is not supported.
@@ -57,14 +58,14 @@ compatibility candidate. Windows 11 x86 does not exist, and native ARM64 is not 
 Compare the downloaded installer with `SHA256SUMS.txt` from the same version-pinned release:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 '.\PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe'
+Get-FileHash -Algorithm SHA256 '.\PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x64-Setup.exe'
 ```
 
 Each installer also has a matching `.sig`. AroDamA verifies updater artifacts with its embedded
 AroDamA-specific Tauri public key. That signature protects update integrity; it is not a Windows
 publisher identity.
 
-The v0.4.1 installers are **not signed with Windows Authenticode**. Windows can show Unknown
+The v0.4.2 installers are **not signed with Windows Authenticode**. Windows can show Unknown
 Publisher, Microsoft Defender SmartScreen, Smart App Control, or organization-policy warnings.
 Do not disable Windows security, antivirus, a firewall, or organization policy to install the app.
 Stop if the filename, byte size, SHA-256, signature, fixed release URL, or asset set differs.
@@ -75,17 +76,17 @@ The following files are attached to the version-pinned GitHub Release. Installer
 SBOMs, the MPL source archive, generated provenance, `latest.json`, and checksums are deliberately
 not committed to the repository tree.
 
-1. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe`
-2. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe.sig`
-3. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x86-Setup.exe`
-4. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x86-Setup.exe.sig`
+1. `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x64-Setup.exe`
+2. `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x64-Setup.exe.sig`
+3. `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x86-Setup.exe`
+4. `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x86-Setup.exe.sig`
 5. `BUILD-PROVENANCE.json`
 6. `EULA.md`
 7. `latest.json`
 8. `LICENSE`
-9. `PCSSAK-AroDamA_0.4.1_x64.cdx.json`
-10. `PCSSAK-AroDamA_0.4.1_x86.cdx.json`
-11. `PCSSAK-AroDamA_0.4.1_MPL-2.0-SOURCE.zip`
+9. `PCSSAK-AroDamA_0.4.2_x64.cdx.json`
+10. `PCSSAK-AroDamA_0.4.2_x86.cdx.json`
+11. `PCSSAK-AroDamA_0.4.2_MPL-2.0-SOURCE.zip`
 12. `PRIVACY.md`
 13. `RELEASE-NOTES.md`
 14. `SECURITY.md`
@@ -100,12 +101,28 @@ See [Release asset policy](docs/RELEASE-ASSET-POLICY.md) and
 
 AroDamA can record supported clipboard text, HTML or RTF, images, physical files, and constrained
 OLE virtual files. It provides date and type filters, encrypted-search candidates, pinned records,
-quick phrases, local Windows OCR, tags, boards, an ordered paste queue, and a local memory timeline
+quick phrases, local Windows OCR, tags, collections (formerly boards), an ordered paste queue, and a local memory timeline
 for events observed or initiated by AroDamA.
+
+### Copy, paste, and organize
+
+- **Copy** keeps the window open and puts the supported content on the clipboard. Paste it in your
+  chosen app with `Ctrl+V`. Text also offers **Copy as plain text**; this is not OCR for images.
+- **Paste into previous app** is a separate automatic-input action. Select the destination field,
+  open AroDamA with your configured shortcut, and choose the item. Plain-text automatic paste is
+  available under paste options. If no safe destination exists, copy and paste manually.
+- **Tags** describe an item, such as a reference or a phrase to review. **Collections** group
+  material for a purpose, such as a project. An item can belong to several of each. **View matching
+  history** opens the full matching history, including when started from Pinned.
+- Unchecking a classification disconnects only the current item. Deleting its name disconnects it
+  from every item without deleting the original content. Collection counts exclude deleted-item
+  storage. Tags and collections are local organization, not cloud collaboration or shared boards.
+- After first-run consent, the window stays open with copying and reopening guidance. Closing that
+  guidance does not hide the app. The configured shortcut or tray icon opens a hidden window.
 
 User-deleted records can be restored for exactly 24 hours from deletion in this free build.
 Encrypted data may remain locally for up to 30 days from deletion, but restore after 24 hours is
-not available in v0.4.1. Permanent deletion remains available. This store is separate from the
+not available in v0.4.2. Permanent deletion remains available. This store is separate from the
 Windows Recycle Bin.
 
 Core clipboard content stays on the user's PC. Narrow network exceptions are the fixed GitHub
@@ -151,7 +168,8 @@ translation review, or jurisdiction-specific legal review. See [Installation](do
 - Current release notes: [RELEASE-NOTES.md](RELEASE-NOTES.md)
 - Feedback handling, contribution rights, and compensation boundaries: [CONTRIBUTING.md](CONTRIBUTING.md)
 
-The root EULA and privacy notice are the approved 2026-09-01 documents distributed with 0.4.1.
+The root EULA and privacy notice remain the approved 2026-09-01 documents distributed with 0.4.1
+and unchanged for 0.4.2. This interface patch alone does not require renewed consent.
 Living support and contribution guidance can change without replacing the documents attached to a
 published release. MPL corresponding-source assets cover those third-party components, not the
 proprietary application source.

@@ -2,9 +2,9 @@
 
 [한국어](KNOWN-LIMITATIONS.ko.md)
 
-This document records the boundaries of PCssak AroDamA Free Early Access `0.4.1`, reviewed
-2026-09-03 against the published release notes and privacy notice. The core boundaries carried
-forward from 0.4.0 are not newly executed test results. A successful
+This document records the boundaries of PCssak AroDamA Free Early Access `0.4.2`, reviewed
+2026-09-03 against the approved release notes and unchanged privacy notice. The core boundaries carried
+forward from 0.4.0 and 0.4.1 are not newly executed test results. A successful
 automated test is not a promise that every application, device, policy, locale, or clipboard
 format will behave identically.
 
@@ -52,7 +52,18 @@ format will behave identically.
 - A library with many large images can use substantial disk space even when list thumbnails and
   pages are loaded on demand.
 
-## Paste behavior
+- Tags and collections are local many-to-many classifications, not cloud sharing or collaborative
+  boards. Collection counts describe active items, excluding deleted-item storage. Unchecking or
+  deleting a classification does not delete original content. Automatic count cleanup treats
+  organized records differently, but organization is not a guarantee against manual deletion or
+  storage failure.
+
+## Copy and paste behavior
+
+- **Copy** and **Copy as plain text** keep the window open and do not inject input into another app.
+  The plain-text option applies only to text; it does not extract text from an image.
+- **Paste into previous app** attempts automatic input into a safely remembered target. After a
+  manual copy, choose the destination and reopen AroDamA with its shortcut to select a fresh target.
 
 - Windows User Interface Privilege Isolation can block automatic input into an elevated or more
   privileged target. In that case AroDamA copies safely and asks the user to press `Ctrl+V`.
@@ -67,7 +78,7 @@ format will behave identically.
 
 - User-deleted items can be restored for exactly 24 hours in this free release unless permanently
   deleted. Encrypted deleted data can remain locally for up to 30 days to support a future plan
-  boundary, but `0.4.1` provides no recovery after 24 hours.
+  boundary, but `0.4.2` provides no recovery after 24 hours.
 - The AroDamA recovery store is separate from the Windows Recycle Bin. Emptying either one does not
   empty the other.
 - Logical deletion, database compaction, and file removal do not guarantee immediate physical
@@ -89,7 +100,7 @@ format will behave identically.
 
 ## Product and service boundary
 
-- `0.4.1` is a free Early Access release. It has no visible Pro purchase, payment processing,
+- `0.4.2` is a free Early Access release. It has no visible Pro purchase, payment processing,
   account, cloud clipboard synchronization, remote license activation, advertising, or analytics.
 - A local maximum 30-day recovery foundation does not make 30-day recovery a purchasable or
   user-visible feature in this release.

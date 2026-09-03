@@ -1,5 +1,5 @@
-PCSSAK AroDamA 0.4.1 - THIRD-PARTY SOFTWARE NOTICES
-고정 생성 기준 / Reproducible timestamp: 2026-09-01T00:00:00.000Z
+PCSSAK AroDamA 0.4.2 - THIRD-PARTY SOFTWARE NOTICES
+고정 생성 기준 / Reproducible timestamp: 2026-09-03T00:00:00.000Z
 생성 근거: package-lock.json의 Windows 런타임 그래프, Cargo.lock의 Windows x64/x86 대상 그래프, cargo-about 원문, 명시적 번들 자산 증빙.
 이 파일은 제3자 라이선스를 변경하거나 대체하지 않습니다.
 
