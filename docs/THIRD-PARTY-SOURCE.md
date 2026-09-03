@@ -4,19 +4,28 @@ PCssak AroDamA is proprietary software that includes third-party components unde
 licenses. This map does not replace or modify any third-party license. The application source
 remains private; providing MPL corresponding source for dependencies does not open the whole app.
 
-## Current 0.4.1 documents — reviewed 2026-09-03
+## Current 0.4.2 compliance assets — prepared 2026-09-03
 
-Use the [v0.4.1 release](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.1)
-for its two `PCSSAK-AroDamA_0.4.1_*.cdx.json` SBOMs,
-`PCSSAK-AroDamA_0.4.1_MPL-2.0-SOURCE.zip`, and `SHA256SUMS.txt`.
-The current repository [THIRD-PARTY-NOTICES.txt](../THIRD-PARTY-NOTICES.txt) is the approved 0.4.1
-notice, 465,497 bytes, with SHA-256:
+Use the [v0.4.2 release](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.2)
+for its two `PCSSAK-AroDamA_0.4.2_*.cdx.json` SBOMs,
+`PCSSAK-AroDamA_0.4.2_MPL-2.0-SOURCE.zip`,
+[version-pinned notices](https://github.com/pcssakinc/pcssak-arodama-releases/releases/download/v0.4.2/THIRD-PARTY-NOTICES.txt),
+and `SHA256SUMS.txt`. The final release's own checksums determine identity; do not reuse a previous
+release's notice, component count, or archive hash as 0.4.2 evidence. Publish these links only with
+the verified 0.4.2 asset set. The repository [THIRD-PARTY-NOTICES.txt](../THIRD-PARTY-NOTICES.txt)
+matches the approved 0.4.2 notice byte for byte: 465,497 bytes, SHA-256
+`d22ced7c474e8de5b0dac43c86dc76bae11da91f390bac9a2b40ee6aa6bbe562`.
+
+### Historical 0.4.1 repository notice snapshot
+
+The preserved [0.4.1 release notice](https://github.com/pcssakinc/pcssak-arodama-releases/releases/download/v0.4.1/THIRD-PARTY-NOTICES.txt)
+is 465,497 bytes, with SHA-256:
 
 ```text
 86208aacae11d0e5798a34f2199dc7693b92bfcfbf84d4a9795e296c20cb82da
 ```
 
-This document synchronization confirms the approved notice identity, not a new full provenance,
+This historical identity is not the 0.4.2 notice identity or a new full provenance,
 license, SBOM, or source-archive audit. Report a suspected missing attribution with the component,
 version, authoritative source, and a safe description; do not upload code you lack permission to share.
 
@@ -24,7 +33,7 @@ version, authoritative source, and a safe description; do not upload code you la
 
 The counts, names, and hash below describe 0.4.0 only. Its
 [version-pinned notices](https://github.com/pcssakinc/pcssak-arodama-releases/releases/download/v0.4.0/THIRD-PARTY-NOTICES.txt)
-and other assets are preserved, not overwritten or presented as fresh 0.4.1 verification.
+and other assets are preserved, not overwritten or presented as fresh 0.4.2 verification.
 
 ### 0.4.0 release compliance assets
 

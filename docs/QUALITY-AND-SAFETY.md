@@ -8,16 +8,20 @@ Free Early Access is not a claim of perfect compatibility.
 
 ## Current release and evidence boundaries — 2026-09-03
 
-The current release is [v0.4.1](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.1),
-published 2026-09-02. This documentation review does not rerun app, installer, or signature tests.
+This guide applies to [v0.4.2](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.2).
+Release-preparation evidence is separated from public-asset verification and real-device acceptance.
+The documentation update itself is not proof that publishing or a Windows installation succeeded.
 
 | Evidence | Scope and status |
 | --- | --- |
-| Latest release metadata | Reviewed: v0.4.1 is published, non-draft, non-prerelease, with 17 attached assets. |
-| Approved EULA, privacy, and release notes | Reviewed: anonymous downloads match the approved canonical files by SHA-256. This is document identity, not a legal certification. |
-| 0.4.1 changes | The published release notes describe installer-language handoff, language preservation, explicit data deletion on uninstall, and safe settings recovery. Those are release claims, not new runtime results from this review. |
-| Historical automated results | The 0.4.0 results below remain 0.4.0 evidence; they are not relabeled as new 0.4.1 passes. |
-| Real-device, accessibility, translation, legal, and external security review | Not established by this documentation review. The acceptance work below remains pending unless exact-release evidence is separately recorded. |
+| 0.4.2 Rust automated suites | Recorded passing: `335/335` for Windows x64 and `335/335` for Windows x86. These are automated target suites, not clean-device installation tests. |
+| 0.4.2 interface regression checks | Recorded passing: `21` checks covering copy actions, first-run completion, input-target isolation, and collection navigation. Isolated/mocked checks do not prove native Windows input behavior. |
+| 0.4.2 language structure | Recorded passing: eight languages, `495` keys each, including placeholder consistency. This is not completed native-speaker review. |
+| Legal and consent continuity | The existing EULA, privacy text, and consent versions are unchanged. A language/identity check is not legal certification. |
+| Public release assets | The exact 17 assets, architecture, signatures, hashes, and Latest endpoint require the separate publication gate in [Release asset policy](RELEASE-ASSET-POLICY.md). |
+| New installation and real in-app update | `NOT_RUN` for the 0.4.2 clean-device/native-upgrade matrix at preparation. Browser fixtures and automated tests are not substitutes. |
+| Historical automated results | The 0.4.0 results below remain 0.4.0 evidence; 0.4.1 language/update improvements remain that version's history. Neither is relabeled as a new 0.4.2 pass. |
+| Accessibility, translation, legal, and external security review | Broad exact-release acceptance remains pending unless separately recorded. |
 
 For each future result, record the exact version and file hash, date, Windows build/architecture,
 scenario, expected and observed result, and whether it was automated, real-device, or not run. Use

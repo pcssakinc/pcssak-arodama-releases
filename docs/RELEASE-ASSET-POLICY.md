@@ -4,26 +4,28 @@ This repository stores public documentation and Issue forms. Generated installer
 signatures, SBOMs, reciprocal-license source archives, provenance, checksums, and updater metadata
 are release assets and must not be committed to the Git tree.
 
-## Current v0.4.1 asset set
+## Current v0.4.2 asset set
 
-Reviewed 2026-09-03. The general latest release is v0.4.1, published 2026-09-02. Historical
-[v0.4.0](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.0) assets and evidence
-remain tied to that version; they are not replaced or relabeled as v0.4.1 results.
+Prepared 2026-09-03 for v0.4.2. Historical
+[v0.4.0](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.0) and
+[v0.4.1](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.1) assets and evidence
+remain tied to those versions; never replace them or relabel their results as v0.4.2.
 
-The current public `v0.4.1` release is non-draft, non-prerelease, selected as GitHub Latest,
-and contains these 17 attached assets (GitHub-generated repository archives are not part of this set):
+Publish this documentation with the verified v0.4.2 release, not before it. The release must be
+non-draft, non-prerelease, selected as GitHub Latest, and contain these 17 attached assets
+(GitHub-generated repository archives are not part of this set):
 
-1. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe`
-2. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe.sig`
-3. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x86-Setup.exe`
-4. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x86-Setup.exe.sig`
+1. `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x64-Setup.exe`
+2. `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x64-Setup.exe.sig`
+3. `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x86-Setup.exe`
+4. `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x86-Setup.exe.sig`
 5. `BUILD-PROVENANCE.json`
 6. `EULA.md`
 7. `latest.json`
 8. `LICENSE`
-9. `PCSSAK-AroDamA_0.4.1_x64.cdx.json`
-10. `PCSSAK-AroDamA_0.4.1_x86.cdx.json`
-11. `PCSSAK-AroDamA_0.4.1_MPL-2.0-SOURCE.zip`
+9. `PCSSAK-AroDamA_0.4.2_x64.cdx.json`
+10. `PCSSAK-AroDamA_0.4.2_x86.cdx.json`
+11. `PCSSAK-AroDamA_0.4.2_MPL-2.0-SOURCE.zip`
 12. `PRIVACY.md`
 13. `RELEASE-NOTES.md`
 14. `SECURITY.md`
@@ -52,7 +54,7 @@ Missing, duplicate, renamed, extra, draft, or prerelease assets fail the contrac
     URLs and repeat the independent checks.
 11. Confirm the newly approved version is non-draft, non-prerelease GitHub Latest and that the fixed
     `releases/latest/download/latest.json` endpoint returns the exact approved updater metadata.
-12. Only then update the production homepage to the verified public filenames, URLs, sizes, hashes,
+12. Only then publish the matching current-version repository documentation and update the production homepage to the verified public filenames, URLs, sizes, hashes,
     version, architecture, release date, and status.
 
 ## Immutability and regeneration
@@ -71,7 +73,7 @@ packages, and workstation details must never appear in this repository, public R
 homepage data, logs, screenshots, or Issues.
 
 The current repository EULA and privacy notice are byte-for-byte copies of the approved v0.4.1
-assets. Updating living README, support, or contribution guidance is not permission to replace a
+assets and remain unchanged for v0.4.2. Updating living README, support, or contribution guidance is not permission to replace a
 published release asset, alter consent text in an existing installer, or reissue old evidence.
 
 ## Repository boundary

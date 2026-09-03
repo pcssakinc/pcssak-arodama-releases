@@ -2,20 +2,21 @@
 
 [English](INSTALLATION.md)
 
-이 안내는 PCssak AroDamA 무료 Early Access `0.4.1`에 적용되며 확인일은 2026-09-03입니다.
+이 안내는 PCssak AroDamA 무료 Early Access `0.4.2`에 적용되며 확인일은 2026-09-03입니다.
 이전 릴리스의 안내와 근거는 각 버전 고정 자료에서 보존합니다.
 
 ## 1. 공식 릴리스 확인
 
-확인 당시 `v0.4.1`은 초안·사전 출시가 아닌 일반 최신 릴리스이며
-[릴리스 자산 정책](RELEASE-ASSET-POLICY.md)의 17개 자산이 있습니다. 선택한 버전의 파일을
-검증하십시오. 이 안내 갱신이 설치 실행이나 서명 검증의 신규 통과 결과는 아닙니다.
+초안·사전 출시가 아닌 공개 `v0.4.2` 릴리스와
+[릴리스 자산 정책](RELEASE-ASSET-POLICY.md)의 17개 자산을 확인하십시오. 선택한 버전의 파일과
+GitHub 최신 릴리스를 별도로 검증합니다. 안내 갱신은 신규 설치나 실제 앱 업데이트의 통과
+근거가 아닙니다.
 저장소 파일, Pull Request 산출물, 미리보기 배포, 소스 태그, 업무일지, 공개되지 않은 초안은 공식
 설치본이 아닙니다.
 
 - 공식 제품 페이지: `https://pcssak.com/arodama`
 - 버전 고정 릴리스:
-  `https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.1`
+  `https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.2`
 - 고정 업데이트 주소:
   `https://github.com/pcssakinc/pcssak-arodama-releases/releases/latest/download/latest.json`
 
@@ -23,9 +24,9 @@
 
 | Windows 환경 | 설치본 | 상태 |
 | --- | --- | --- |
-| Windows 11 Home/Pro x64 | `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe` | 주 지원 후보 |
+| Windows 11 Home/Pro x64 | `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x64-Setup.exe` | 주 지원 후보 |
 | Windows 10 22H2 Home/Pro x64 | x64 설치본 | 제한적 호환 후보 |
-| Windows 10 22H2 Home/Pro x86 | `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x86-Setup.exe` | 제한적 호환 후보 |
+| Windows 10 22H2 Home/Pro x86 | `PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x86-Setup.exe` | 제한적 호환 후보 |
 | Windows 11 x86 | 없음 | Windows 11 x86은 존재하지 않음 |
 | 네이티브 ARM64, S 모드, Server, macOS, Linux, Wine | 없음 | 미지원 |
 
@@ -38,36 +39,42 @@ Windows 10 호환 표기는 Microsoft의 Windows 10 지원을 연장하지 않�
 계산한 SHA-256과 공개 값을 비교하십시오.
 
 ```powershell
-Get-FileHash -Algorithm SHA256 '.\PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe'
+Get-FileHash -Algorithm SHA256 '.\PCSSAK-AroDamA-Free-Early-Access-v0.4.2-Windows-x64-Setup.exe'
 ```
 
 AroDamA 업데이트 서명은 앱에 내장된 AroDamA 전용 Tauri 공개키로 업데이트 파일 무결성을
 검증합니다. Windows 게시자 신원을 증명하는 서명이 아닙니다.
 
-`0.4.1` 설치본은 **Windows Authenticode 미서명**입니다. Windows가 알 수 없는 게시자,
+`0.4.2` 설치본은 **Windows Authenticode 미서명**입니다. Windows가 알 수 없는 게시자,
 Microsoft Defender SmartScreen, Smart App Control 또는 조직 정책 경고를 표시할 수 있습니다.
 설치를 위해 Windows 보안·백신·방화벽·조직 정책을 끄지 마십시오. 파일명·바이트 크기·SHA-256·
 서명·버전 고정 URL·자산 목록 중 하나라도 맞지 않으면 중단하십시오.
 
 ## 4. 설치
 
-1. 실행 중인 이전 AroDamA 창이 있으면 닫습니다.
+1. 이전 AroDamA가 실행 중이면 트레이 메뉴에서 종료합니다. 창의 X는 종료가 아니라 숨김입니다.
 2. PC 아키텍처에 맞는 설치본을 실행합니다.
 3. 설치기가 제공하는 여덟 언어 중 하나를 선택합니다.
 4. EULA를 읽고 동의할 때만 수락합니다. 취소하면 설치가 완료되지 않아야 합니다.
 5. Windows에 필요할 때만 Microsoft Edge WebView2 Runtime 설치 또는 전달을 허용합니다.
 6. 시작 메뉴나 설치된 바로 가기에서 AroDamA를 실행합니다.
 
-0.4.1 신규 설치에서는 선택한 설치 언어를 앱에 한 번 적용하며, 업데이트는 기존에 저장한 앱
+0.4.2 신규 설치에서는 선택한 설치 언어를 앱에 한 번 적용하며, 업데이트는 기존에 저장한 앱
 언어를 보존합니다. 지원 언어는 영어·한국어·일본어·독일어·스페인어·브라질 포르투갈어·
 튀르키예어·프랑스어입니다. 지원하지 않는 설치 언어는 Windows 선호 언어를 거쳐 영어로
-대체합니다. [0.4.1 릴리스 노트](../RELEASE-NOTES.md)를 확인하십시오.
+대체합니다. [0.4.2 릴리스 노트](../RELEASE-NOTES.md)를 확인하십시오.
 
 ## 5. 첫 실행 동의
 
 동의 전에는 클립보드 수집과 자동 업데이트 확인이 꺼진 상태여야 합니다. 로컬 데이터·보관·삭제·
 백업·업데이트·네트워크 안내를 읽고 수집 시작 여부를 명시적으로 선택하십시오. 이후 설정에서
 수집과 업데이트 확인을 바꿀 수 있습니다.
+
+동의하고 기록을 시작하면 창이 유지되며 복사 방법·실제 설정 단축키·트레이 아이콘 안내가
+나타납니다. **안내 닫기**는 메시지만 닫고 앱은 유지합니다. 아이콘이 보이지 않으면 Windows의
+숨겨진 아이콘 표시를 여십시오. X나 Esc는 창 숨김이며 단축키·트레이 아이콘으로 다시 열 수
+있습니다. 최초 안내·재동의 화면에는 외부 앱 자동 입력 대상을 남기지 않습니다. 기존 앱 언어와
+동의는 보존하며 0.4.2 화면 개선만을 이유로 다시 동의를 요구하지 않습니다.
 
 핵심 클립보드 내용은 로컬에 저장됩니다. 민감한 업무에 사용하기 전에
 [개인정보 처리 안내](../PRIVACY.md)와 [알려진 한계](KNOWN-LIMITATIONS.ko.md)를 확인하십시오.
@@ -76,6 +83,13 @@ Microsoft Defender SmartScreen, Smart App Control 또는 조직 정책 경고를
 
 - 수집이 켜진 동안 지원되는 내용을 평소처럼 복사하면 AroDamA가 기록합니다.
 - 설정한 전역 단축키로 창을 열고 날짜·종류로 필터링하거나 검색합니다.
+- **복사하기**는 창을 유지합니다. 원하는 앱에서 `Ctrl+V`를 누르십시오. 글은 **서식 없이
+  복사하기**도 제공하며 이미지·파일에는 의미 없는 서식 제거 버튼을 표시하지 않습니다.
+- **이전 앱에 붙여넣기**는 입력칸을 먼저 선택하고 설정 단축키로 AroDamA를 연 뒤 사용합니다.
+  외부 앱 자동 입력이며 서식 없는 자동 입력은 붙여넣기 보조 옵션에 있습니다.
+- 태그에는 기록의 성격을, 자료 모음에는 프로젝트 등 목적을 붙입니다. **모은 기록 보기**는
+  고정 탭에서도 전체 기록의 해당 모음을 엽니다. 체크 해제는 현재 항목 연결만, 분류 이름 삭제는
+  모든 항목의 해당 연결만 없애며 원문은 삭제하지 않습니다.
 - 선택 항목은 `Enter`로 붙여넣고, 가능한 경우 `Shift+Enter`로 일반 텍스트 붙여넣기,
   `Ctrl+Enter`로 자동 입력 없이 복사할 수 있습니다.
 - Windows 무결성 경계가 자동 입력을 막으면 AroDamA는 항목만 복사하고 `Ctrl+V`로 직접
@@ -100,7 +114,7 @@ OCR은 로컬 보조 기능이며 정확한 원문 전사 보장이 아닙니다
 삭제 데이터를 다시 가져올 수 있습니다. 기록이 필요하면 복원이나 제거 전에 별도 안전 백업을
 만드십시오.
 
-0.4.1 일반 제거는 기록과 설정을 보존합니다. `앱 데이터 삭제`를 명시적으로 선택한 경우에만
+0.4.2 일반 제거는 기록과 설정을 보존합니다. `앱 데이터 삭제`를 명시적으로 선택한 경우에만
 앱이 관리하는 데이터가 삭제되며 내보낸 백업은 별도로 남습니다. 삭제를 선택하기 전에 보존할
 내용을 확인하십시오. 이는 공개 릴리스 노트의 요약이며 이번에 제거 시험을 새로 실행한 결과는
 아닙니다.
