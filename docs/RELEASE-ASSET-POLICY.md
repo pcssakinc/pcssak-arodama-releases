@@ -4,22 +4,26 @@ This repository stores public documentation and Issue forms. Generated installer
 signatures, SBOMs, reciprocal-license source archives, provenance, checksums, and updater metadata
 are release assets and must not be committed to the Git tree.
 
-## Exact v0.4.0 asset set
+## Current v0.4.1 asset set
 
-A public `v0.4.0` release is valid only when it is non-draft, non-prerelease, selected as GitHub
-Latest, and contains exactly these 17 assets:
+Reviewed 2026-09-03. The general latest release is v0.4.1, published 2026-09-02. Historical
+[v0.4.0](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.0) assets and evidence
+remain tied to that version; they are not replaced or relabeled as v0.4.1 results.
 
-1. `PCSSAK-AroDamA-Free-Early-Access-v0.4.0-Windows-x64-Setup.exe`
-2. `PCSSAK-AroDamA-Free-Early-Access-v0.4.0-Windows-x64-Setup.exe.sig`
-3. `PCSSAK-AroDamA-Free-Early-Access-v0.4.0-Windows-x86-Setup.exe`
-4. `PCSSAK-AroDamA-Free-Early-Access-v0.4.0-Windows-x86-Setup.exe.sig`
+The current public `v0.4.1` release is non-draft, non-prerelease, selected as GitHub Latest,
+and contains these 17 attached assets (GitHub-generated repository archives are not part of this set):
+
+1. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe`
+2. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x64-Setup.exe.sig`
+3. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x86-Setup.exe`
+4. `PCSSAK-AroDamA-Free-Early-Access-v0.4.1-Windows-x86-Setup.exe.sig`
 5. `BUILD-PROVENANCE.json`
 6. `EULA.md`
 7. `latest.json`
 8. `LICENSE`
-9. `PCSSAK-AroDamA_0.4.0_x64.cdx.json`
-10. `PCSSAK-AroDamA_0.4.0_x86.cdx.json`
-11. `PCSSAK-AroDamA_0.4.0_MPL-2.0-SOURCE.zip`
+9. `PCSSAK-AroDamA_0.4.1_x64.cdx.json`
+10. `PCSSAK-AroDamA_0.4.1_x86.cdx.json`
+11. `PCSSAK-AroDamA_0.4.1_MPL-2.0-SOURCE.zip`
 12. `PRIVACY.md`
 13. `RELEASE-NOTES.md`
 14. `SECURITY.md`
@@ -46,7 +50,7 @@ Missing, duplicate, renamed, extra, draft, or prerelease assets fail the contrac
    JSON schemas, signatures, SBOMs, source archive, and cross-file consistency.
 10. Publish only after approval, then anonymously re-download all 17 assets from the version-pinned
     URLs and repeat the independent checks.
-11. Confirm `v0.4.0` is non-draft, non-prerelease GitHub Latest and that the fixed
+11. Confirm the newly approved version is non-draft, non-prerelease GitHub Latest and that the fixed
     `releases/latest/download/latest.json` endpoint returns the exact approved updater metadata.
 12. Only then update the production homepage to the verified public filenames, URLs, sizes, hashes,
     version, architecture, release date, and status.
@@ -65,6 +69,10 @@ remain unchanged only when the installer bytes are independently proven unchange
 Private updater-key recovery metadata, storage-device evidence, passwords, keys, recovery
 packages, and workstation details must never appear in this repository, public Release assets,
 homepage data, logs, screenshots, or Issues.
+
+The current repository EULA and privacy notice are byte-for-byte copies of the approved v0.4.1
+assets. Updating living README, support, or contribution guidance is not permission to replace a
+published release asset, alter consent text in an existing installer, or reissue old evidence.
 
 ## Repository boundary
 

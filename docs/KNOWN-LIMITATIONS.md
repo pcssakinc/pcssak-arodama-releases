@@ -2,7 +2,9 @@
 
 [한국어](KNOWN-LIMITATIONS.ko.md)
 
-This document records the boundaries of PCssak AroDamA Free Early Access `0.4.0`. A successful
+This document records the boundaries of PCssak AroDamA Free Early Access `0.4.1`, reviewed
+2026-09-03 against the published release notes and privacy notice. The core boundaries carried
+forward from 0.4.0 are not newly executed test results. A successful
 automated test is not a promise that every application, device, policy, locale, or clipboard
 format will behave identically.
 
@@ -26,6 +28,8 @@ format will behave identically.
 - Password-manager, protected-window, enterprise DLP, Remote Desktop, browser, Office, and
   sandboxed-application behavior varies. Sensitive-data filtering reduces risk but cannot detect
   every secret or confidential item.
+- Sensitive-text blocking is off by default. Enabling it or changing excluded apps applies to future
+  capture and does not scan or automatically delete existing history. Review old records separately.
 - Core stored content is encrypted for the signed-in Windows user, but plaintext necessarily
   exists in process memory while AroDamA displays, indexes, copies, pastes, exports, backs up, or
   restores it. A compromised Windows account or running process is outside this boundary.
@@ -63,7 +67,7 @@ format will behave identically.
 
 - User-deleted items can be restored for exactly 24 hours in this free release unless permanently
   deleted. Encrypted deleted data can remain locally for up to 30 days to support a future plan
-  boundary, but `0.4.0` provides no recovery after 24 hours.
+  boundary, but `0.4.1` provides no recovery after 24 hours.
 - The AroDamA recovery store is separate from the Windows Recycle Bin. Emptying either one does not
   empty the other.
 - Logical deletion, database compaction, and file removal do not guarantee immediate physical
@@ -85,7 +89,7 @@ format will behave identically.
 
 ## Product and service boundary
 
-- `0.4.0` is a free Early Access release. It has no visible Pro purchase, payment processing,
+- `0.4.1` is a free Early Access release. It has no visible Pro purchase, payment processing,
   account, cloud clipboard synchronization, remote license activation, advertising, or analytics.
 - A local maximum 30-day recovery foundation does not make 30-day recovery a purchasable or
   user-visible feature in this release.

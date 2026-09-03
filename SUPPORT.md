@@ -4,7 +4,24 @@
 - 일반 문의 / General support: `support@pcssak.com`
 - 개인정보 문의 / Privacy: `privacy@pcssak.com`
 
+이 파일은 현재 운영 안내입니다. 이미 공개한 릴리스에 첨부된 지원 문서는 해당 버전의 기록으로
+보존하며 교체하지 않습니다. / This is living support guidance; version-pinned release attachments
+retain their original bytes.
+
 ## 한국어
+
+### 문의 경로
+
+| 내용 | 공식 경로 |
+| --- | --- |
+| 질문·사용 후기·개선 아이디어 | [공개 토론](https://github.com/pcssakinc/pcssak-arodama-releases/discussions). 공지는 Announcements, 질문은 Q&A, 제안은 Ideas를 사용합니다. |
+| 재현 가능한 오류 | [오류 양식](https://github.com/pcssakinc/pcssak-arodama-releases/issues/new?template=bug-report.yml). 합성 예시로 한 문제씩 제보합니다. |
+| GitHub 이용이 어려운 일반 문의 | `support@pcssak.com`. 일반 이메일에도 실제 클립보드·DB·백업·비밀정보를 첨부하지 않습니다. |
+| 개인정보 처리 문의 | `privacy@pcssak.com`. 확인에 필요한 최소 내용만 보냅니다. |
+| 악용 가능한 취약점 | [GitHub 비공개 보안 신고](https://github.com/pcssakinc/pcssak-arodama-releases/security/advisories/new). 일반 이메일·공개 이슈·토론에 상세를 보내지 않습니다. |
+
+의견 검토 상태와 기여·보상 경계는 [기여 원칙](CONTRIBUTING.md)을 따릅니다. 오류·기능 제안을
+중복 게시하지 말고 관련 토론과 이슈를 서로 연결하십시오.
 
 ### 지원 범위
 
@@ -36,10 +53,23 @@ Windows 10 호환 표기는 운영체제 자체의 보안 지원을 뜻하지 �
 
 공개되기 전의 취약점 세부 내용은 일반 지원 이메일이나 공개 이슈에 보내지 마십시오. 공식
 `pcssakinc/pcssak-arodama-releases` GitHub 저장소의 **비공개 보안 권고(Private security
-advisory)** 기능을 사용하십시오. 공개 릴리스 전에 저장소 소유자는 이 비공개 신고 기능이 실제로
-활성화됐는지 확인해야 합니다. 자세한 범위와 처리 원칙은 `SECURITY.md`를 따릅니다.
+advisory)** 기능을 사용하십시오. 2026-09-03 읽기 전용 API 확인에서 비공개 신고 기능은 활성화 상태였습니다. 경로가 보이지
+않으면 일반 지원에는 접수 경로 문의만 보내고 취약점 세부사항은 보내지 마십시오. 자세한 범위와 처리 원칙은 `SECURITY.md`를 따릅니다.
 
 ## English
+
+### Contact routes
+
+| Topic | Official route |
+| --- | --- |
+| Questions, experiences, and ideas | [Discussions](https://github.com/pcssakinc/pcssak-arodama-releases/discussions): Announcements for notices, Q&A for questions, Ideas for proposals. |
+| Reproducible defect | [Bug form](https://github.com/pcssakinc/pcssak-arodama-releases/issues/new?template=bug-report.yml), one problem with synthetic data. |
+| General help without GitHub | `support@pcssak.com`; do not attach clipboard data, databases, backups, or secrets to ordinary email either. |
+| Privacy processing inquiry | `privacy@pcssak.com`, with only the minimum necessary details. |
+| Exploitable vulnerability | [Private security report](https://github.com/pcssakinc/pcssak-arodama-releases/security/advisories/new), not general email, public Issues, or Discussions. |
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for feedback handling and contribution/compensation boundaries.
+Link related discussions and issues instead of submitting the same defect or proposal repeatedly.
 
 ### Support scope
 
@@ -67,5 +97,5 @@ personal paths, personal data, credentials, or confidential work information to 
 
 Do not send non-public vulnerability details through general support email or a public issue. Use the
 **Private security advisory** feature in the official `pcssakinc/pcssak-arodama-releases` GitHub
-repository. Before publication, the repository owner must confirm that private vulnerability reporting
-is actually enabled. See `SECURITY.md` for scope and handling expectations.
+repository. A read-only API check confirmed the feature enabled on 2026-09-03. If the route is
+unavailable, ask general support only how to obtain the private route; do not include exploit details. See `SECURITY.md` for scope and handling expectations.

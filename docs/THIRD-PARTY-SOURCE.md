@@ -1,10 +1,32 @@
 # Third-Party Notices, SBOMs, and Corresponding Source
 
 PCssak AroDamA is proprietary software that includes third-party components under their own
-licenses. [THIRD-PARTY-NOTICES.txt](../THIRD-PARTY-NOTICES.txt) is the public human-readable
-component and license record for `0.4.0`. It does not replace or modify any third-party license.
+licenses. This map does not replace or modify any third-party license. The application source
+remains private; providing MPL corresponding source for dependencies does not open the whole app.
 
-## Release compliance assets
+## Current 0.4.1 documents — reviewed 2026-09-03
+
+Use the [v0.4.1 release](https://github.com/pcssakinc/pcssak-arodama-releases/releases/tag/v0.4.1)
+for its two `PCSSAK-AroDamA_0.4.1_*.cdx.json` SBOMs,
+`PCSSAK-AroDamA_0.4.1_MPL-2.0-SOURCE.zip`, and `SHA256SUMS.txt`.
+The current repository [THIRD-PARTY-NOTICES.txt](../THIRD-PARTY-NOTICES.txt) is the approved 0.4.1
+notice, 465,497 bytes, with SHA-256:
+
+```text
+86208aacae11d0e5798a34f2199dc7693b92bfcfbf84d4a9795e296c20cb82da
+```
+
+This document synchronization confirms the approved notice identity, not a new full provenance,
+license, SBOM, or source-archive audit. Report a suspected missing attribution with the component,
+version, authoritative source, and a safe description; do not upload code you lack permission to share.
+
+## Historical 0.4.0 compliance record
+
+The counts, names, and hash below describe 0.4.0 only. Its
+[version-pinned notices](https://github.com/pcssakinc/pcssak-arodama-releases/releases/download/v0.4.0/THIRD-PARTY-NOTICES.txt)
+and other assets are preserved, not overwritten or presented as fresh 0.4.1 verification.
+
+### 0.4.0 release compliance assets
 
 The exact version-pinned GitHub Release contains these generated compliance assets:
 
@@ -19,7 +41,7 @@ The exact version-pinned GitHub Release contains these generated compliance asse
 These generated SBOM and source-archive assets are attached only to the version-pinned GitHub
 Release. They are intentionally not committed to this public documentation repository.
 
-## MPL-2.0 corresponding-source set
+### 0.4.0 MPL-2.0 corresponding-source set
 
 The `0.4.0` compliance manifest records five distributed MPL-2.0 components and 73 corresponding-
 source archive entries:
@@ -36,15 +58,15 @@ and published beside the binaries. Replacing a binary, dependency, toolchain inp
 contract requires regeneration of the affected SBOM, notice, source, provenance, and checksum
 assets.
 
-## Explicit non-SPDX reference
+### 0.4.0 explicit non-SPDX reference
 
 Bundled SQLite `3.46.0` is explicitly represented as
 `LicenseRef-SQLite-Public-Domain` with the upstream public-domain notice. This avoids silently
 inventing an SPDX license identifier.
 
-## Verification
+### 0.4.0 recorded notice identity
 
-The source-canonical `THIRD-PARTY-NOTICES.txt` prepared for this repository is 465,497 bytes with
+The historical 0.4.0 `THIRD-PARTY-NOTICES.txt` was recorded as 465,497 bytes with
 SHA-256:
 
 ```text
