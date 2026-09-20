@@ -2,6 +2,13 @@
 
 [한국어 안내](README.ko.md)
 
+> **0.5.0 in preparation — downloads on hold** (2026-09-20)
+>
+> Version 0.5.0 is undergoing development and verification. Current website download buttons
+> are disabled; 0.5.0 installers and automatic updates are not public.
+> See the [0.5.0 preparation status](docs/V050-PREPARATION.md) (Korean).
+> The 0.4.2 documentation below is a historical release reference, not confirmation of a 0.5.0 launch.
+
 > This repository is the public release, documentation, verification, support, and feedback home
 > for PCssak AroDamA. The proprietary application source is maintained separately in a private
 > repository.
